@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+}
+.sky {
+  background: radial-gradient(circle at bottom, #ff2f0a 10%, #0a1b25 70%);
+  width: 100%;
+  height: 60%;
+  position: relative;
+  z-index: -2;
+}
+.earth {
+  background: radial-gradient(circle at top, #002fc9, #010c25);
+  width: 100%;
+  height: 40%;
+  z-index: 1;
+}
+.sun {
+  /*background: radial-gradient(#ffee00, #ff8800);*/
+  background: radial-gradient(closest-side, #ebf8e1, #ffee00, #f69d3c);
+  width: 30%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -50%;
+  left: 35%;
+  overflow: hidden;
+  z-index: -1;
+}
